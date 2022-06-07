@@ -31,7 +31,7 @@ const renderError = function (msg) {
   countriesContainer.style.opacity = 1;
 };
 
-const getCountryAndNeighbour = function (country) {
+const getCountryAndNeighbour = function (country, className) {
   const request = new XMLHttpRequest();
   request.open('GET', `https://restcountries.com/v3.1/name/${country}`);
   request.send();
@@ -41,7 +41,7 @@ const getCountryAndNeighbour = function (country) {
     console.log(data);
 
     // Render country 1
-    renderCountry(data);
+    renderCountry(data, className);
 
     // Get neighbour country 2
     const [neighbour] = data.borders;
