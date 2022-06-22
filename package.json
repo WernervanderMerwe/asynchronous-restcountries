@@ -1,10 +1,11 @@
 {
   "name": "asynchronous-restcountries",
-  "source": "./src/index.html",
+  "description": "Asynchronous application using restcountries API",
+  "source": "./index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "parcel",
-    "build": "parcel build"
+    "build": "parcel build --dist-dir ./output"
   },
   "devDependencies": {
     "parcel": "^2.6.0"
